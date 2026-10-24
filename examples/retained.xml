@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"><channel>
+  <title>Synthetic Field Notes</title><link>https://new.example.invalid/</link>
+  <description>A new host, with preserved historical identity.</description>
+  <item><guid isPermaLink="false">episode-003</guid><title>New episode</title>
+    <pubDate>Wed, 21 Oct 2026 10:00:00 +0000</pubDate>
+    <enclosure url="https://media.example.invalid/003.mp3" length="17000" type="audio/mpeg" />
+  </item>
+  <item><guid isPermaLink="false">episode-002</guid><title>Second walk</title>
+    <pubDate>Tue, 20 Oct 2026 12:00:00 +0200</pubDate>
+    <enclosure url="https://media.example.invalid/002.mp3" length="15000" type="audio/mpeg" />
+  </item>
+  <item><guid isPermaLink="false">episode-001</guid><title>First walk</title>
+    <pubDate>Mon, 19 Oct 2026 10:00:00 +0000</pubDate>
+    <enclosure url="https://media.example.invalid/001.mp3" length="12000" type="audio/mpeg" />
+  </item>
+</channel></rss>

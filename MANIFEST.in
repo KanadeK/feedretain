@@ -1,0 +1,5 @@
+include *.md LICENSE .gitignore .gitattributes
+recursive-include examples *.py *.xml *.json
+recursive-include scripts *.py
+recursive-include tests *.py
+recursive-include .github *.yml

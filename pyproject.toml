@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=78"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "feedretain"
+version = "0.1.0"
+description = "Offline podcast RSS migration continuity gates"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{name = "KanadeK"}]
+dependencies = []
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: Console",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+]
+
+[project.urls]
+Homepage = "https://github.com/KanadeK/feedretain"
+Issues = "https://github.com/KanadeK/feedretain/issues"
+
+[project.scripts]
+feedretain = "feedretain.cli:main"
+
+[project.optional-dependencies]
+dev = ["pytest==9.1.1", "coverage==7.17.0", "ruff==0.17.2", "build==1.6.1"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[tool.coverage.run]
+source = ["feedretain"]
+branch = true
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]

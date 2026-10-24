@@ -1,0 +1,16 @@
+name: Bug report
+description: Report a reproducible behavior defect using synthetic inputs
+body:
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Minimal reproduction
+      description: Include version and OS. Use synthetic inputs, without private data.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected and observed behavior
+    validations:
+      required: true
